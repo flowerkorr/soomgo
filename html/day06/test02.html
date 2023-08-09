@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive02</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        section{
+            display:flex;
+            justify-content: center;
+        }
+
+        div{
+            background-color: blue;
+            width:20vw;
+            height:20vh;
+            margin:10px;
+        }
+
+        @media(max-width:700px) and (min-width:650px){
+            body{
+                background-color: red;
+            }
+            section{
+                /* display:flex;*/
+                flex-wrap: wrap; /*뷰포트 너비의 조건을 만족할때
+                                    section 요소들이 플렉스 레이아웃을
+                                    사용한다*/
+            }
+            div{
+                background-color: beige;
+                width:40vw;
+                height:40vh;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="div1">div1</div>
+            <div class="div2">div2</div>
+            <div class="div3">div3</div>
+            <div class="div4">div4</div>
+        </section>
+    </main>
+</body>
+</html>

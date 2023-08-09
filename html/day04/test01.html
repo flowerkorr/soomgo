@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic01</title>
+    <link rel = "stylesheet" href="/css/day04/test01.css"/>
+  </head>
+  <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    header{
+        height:100px;
+        background-color: tomato;
+        color:white;
+        font-size : 30px;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .header-text-box{
+        height:50px;
+    }
+    nav{
+        height:50px;
+        background-color: steelblue;
+        font-size:20px;
+        width:100%;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    li{
+
+        height:50px;
+        line-height: 50px;
+        margin:0 10px;
+    }
+
+    .main-container{
+        display:flex;
+        height:500px;
+
+    }
+    aside{
+        background-color: brown;
+        height:100%;
+        width:200px;
+        color:white;
+        font-size:30px;
+        display:flex;
+    }
+    .aside-text-box{
+        margin:auto;
+    }
+
+    main{
+        background-color: gray;
+        width:100%;
+        height: 100%;
+       
+    }
+    .main-text-box{
+        color:white;
+        font-size:25px;
+       
+    }
+    .section-box{
+        background-color:blueviolet;
+        height:130px;
+        width:400px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    .section-box2{
+        background-color:blueviolet;
+        height:200px;
+        width:400px;
+        display: flex;
+        flex-direction: column;
+        margin: 25px auto;
+    }
+    .section-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-text-box{
+        color:white;
+        font-size: 30px;
+    }
+    .article-container{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .section-article-box{
+        width:100px;
+        height:60px;
+        background-color: skyblue;
+        margin: auto;
+    }
+    .article-text-box{
+        color:white;
+        text-align: center;
+        margin:10px 0;
+        font-size:25px;
+    }
+    .section2-article-box{
+        width:130px;
+        height:60px;
+        background-color: skyblue;
+        margin: auto;
+    }
+    .article2-container{
+        margin:10px 0; 
+    }
+
+    .article-text-box2{
+        color:white;
+        font-size:25px;
+      
+    }
+    footer{
+        height:100px;
+        background-color: black;
+        color:white;
+        font-size: 30px;
+        display:flex;
+    }
+    .footer-text-box{
+        margin:auto;
+    }
+    
+  </style>
+
+  <body>
+    <header>
+        <div class="header-text-box">header</div>
+      <nav>
+            <ul>
+                <li>nav 메뉴1</li>
+                <li>nav 메뉴2</li>
+                <li>nav 메뉴3</li>
+                <li>nav 메뉴4</li>
+            </ul>
+      </nav>
+    </header>
+
+   <div class="main-container">
+        <aside>
+            <div class="aside-text-box">
+                aside
+            </div>
+        </aside>
+
+        <main>
+            <div class="main-text-box">
+                main
+            </div>
+            <div class="section-container">
+                <section class="section-box">
+                    <div class="section-text-box">
+                        section
+                    </div>
+                    <div class="article-container">
+                        <!--width:100px height60%-->
+                        <article class="section-article-box">
+                        <div class="article-text-box">
+                            article
+                            </div>
+                        </article>
+                        <article class="section-article-box">
+                            <div class="article-text-box">
+                            article
+                            </div>
+                        </article>
+                        <article class="section-article-box">
+                            <div class="article-text-box">
+                            article
+                            </div>
+                        </article>
+                        
+                    </div>
+                </section>
+    <!------------------------------------------------------------->
+                <section class="section-box2">
+                    <div class="section-text-box">
+                        section
+                    </div>
+                    <div class="article-container">
+                        <div class="article2-container">
+                            <article class="section2-article-box">
+                                <div class="article-text-box2">
+                                    article
+                                    </div>
+                                </article>
+                                <article class="section2-article-box">
+                                    <div class="article-text-box2">
+                                    article
+                                    </div>
+                                </article>
+                        </div>
+                        <div class="article2-container">
+                            <article class="section2-article-box">
+                                <div class="article-text-box2">
+                                    article
+                                    </div>
+                                </article>
+                                <article class="section2-article-box">
+                                    <div class="article-text-box2">
+                                    article
+                                    </div>
+                                </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+   </div>
+    <footer class="footer-text-box">
+        <div class="footer-text-box">
+            footer
+        </div>
+    </footer>
+  </body>
+</html>

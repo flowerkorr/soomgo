@@ -1,0 +1,30 @@
+div{
+    background-color: beige;
+    border : 3px solid red;
+    width:100px;
+    height:100px;
+
+    /*마진이나 패딩을 특정 방향만 줄 때는 속성의 이름이
+        top,right,bottom,left를 사용하면 된다    
+    */
+    /* 방법 1 */
+    /* margin-left: 50px;
+    margin-bottom: 20px; */
+
+    /*방법 2*/
+    /* margin : 0 0 20px 50px; /*상우하좌 / 시계방향 순*/
+    /* padding : 20px 0 0 0;  */
+
+    /* 숫자를 2개만 설정한다면 상하 , 좌우의 여백을 지정한다 */
+    /* margin : 20px 50px; */
+    /* padding : 20px 0 0 0; */
+
+
+    /* margin:20px 400px; 블럭 요소들을 화면 중앙으로 옮김 */
+    /*AUTO는 화면크기에 따라서 알아서 중앙을 유지하게 해준다*/
+    /* margin :20px auto;
+    text-align: center;
+    border-radius: 50%; 박스를 원모양으로 만듦 */
+
+
+}

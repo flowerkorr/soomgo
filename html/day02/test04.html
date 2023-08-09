@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test04</title>
+</head>
+<body style="font-size: large;">
+    <table border="1" width="500px;" height="300px;" cellspacing="0">
+        <caption>
+            caption은 표의 제목이다
+        </caption>
+        <tr>
+            <th>컬럼제목 1 </th><!--컬럼의 제목처럼 사용되어-->
+            <th>컬럼제목 2</th>
+            <th>컬럼제목 3</th>
+        </tr>
+        <tr> <!--
+               tr은 행을 만들고 내부에 td태그를 사용해 
+                몇개의 컬럼을 만들지 정한다 
+            -->
+            <td rowspan="2">1행 1열</td>
+            <!--첫번째 열에 해당하는 셀, 두 개의 행을 걸쳐서 병합함-->
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <td colspan="2">2행 2열</td>
+            <!--두번째 행의 두번째 열에 해당하는 셀,2개의 열을 걸쳐서 병합함-->
+        </tr>
+    </table>
+</body>
+</html>

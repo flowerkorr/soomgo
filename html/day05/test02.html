@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "">
+        <!-- fieldset : 여러 라벨을 묶어주는 태그-->
+        <fieldset>
+            <!-- legend : fieldset의 설명을 적어주는 태그-->
+            <legend>사용자 정보</legend>
+            <ul>
+                <li> 
+                    <label for="name">이름 : </label>
+                    <input type="text" id="name"/>
+                </li>
+                <li>
+                    <label for="age">나이 : </label>
+                    <input type="text" id="age"/>
+                </li>
+                <li>
+                    <label for="read">
+                        읽기만 하그라잉
+                        <input type="text" id="read" value="readonly" readonly disabled>
+                    </label>
+                </li>
+            </ul>
+            <input type="submit" value="보내버리깅"/>
+           
+            
+           
+        </fieldset>
+    </form>
+</body>
+</html>

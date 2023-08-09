@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display01</title>
+    <style>
+        .span-inline{
+            background-color: beige;
+            font-size: 20px;
+            margin: 10px;
+            padding:10px;
+            border:1px solid red;
+            display: inline;
+            /*인라인 요소는 컨텐츠영역 크기 조절 불가능*/
+            /* width:20px; */
+            line-height:100px;
+            /*인라인 요소는 line-height 속성으로 줄 간격을 조절할 수 있음*/
+            letter-spacing:10px;
+            /* letter-spacing으로 글자간의 간격을 조절할 수 있음 */
+            /*word-spacing으로 단어간의 간격을 조절할 수 있음*/
+        }
+
+        .span-block{
+            display:block;
+            background-color: white;
+            color:darkblue;
+            border:1px solid gray;
+            font-size: 25px;
+            font-weight: bold;
+            width:100px;
+            height:100px;
+            margin:10px auto;
+        }
+
+        .div-inline-block{
+            display: inline-block;
+            border: 1px solid pink;
+            background-color: blueviolet;
+            
+            /*인라인 블럭은 요소의 크기 만큼만 영역을 차지하여
+                인라인 요소처럼 옆에 다른 요소가 올 수 있다
+                블럭 요소처럼 컨텐츠의 크기를 조절할 수 있다
+            */
+            width:100px;
+            height:100px;
+            margin: 10px auto;
+            /*인라인-블럭은 margin : auto를 이용한 중앙정렬이 불가능하다 */
+        }
+
+        .div-none{
+            background-color: aquamarine;
+            border:1px slide black;
+            width: 100px;
+            height : 100px;
+            display:none;
+            /*display : none을 주면 요소가 사라진다
+            단순히 안보이는것이 아니라 없어져부러
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>display : inline</h1>
+    <span class="span-inline">span1</span>
+    <span>span2</span>
+    <span class="span-inline">span3</span>
+    <span>span4</span>
+    <span class="span-inline">span5</span>
+
+    <h1>display : block</h1>
+    <span class="span-block">span1</span>
+    <span class="span-block">span2</span>
+    <span class="span-block">span3</span>
+    <span class="span-block">span4</span>
+    <span class="span-block">span5</span>
+
+    <h1>display : inline-block</h1>
+    <div class="div-inline-block">div1</div>
+    <div class="div-inline-block">div2</div>
+    <div class="div-inline-block">div3</div>
+    <div class="div-inline-block">div4</div>
+    <div class="div-inline-block">div5</div>
+
+    <h1>display : none</h1>
+    <div class="div-none">div1</div>
+    <div class="div-none">div2</div>
+    <div class="div-none">div3</div>
+    <div class="div-none">div4</div>
+    <div class="div-none">div5</div>
+</body>
+</html>
